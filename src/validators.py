@@ -12,8 +12,8 @@ class DataValidator:
 
         self.number_constraints: dict = {
             "type": int,
-            "min": 10,
-            "max": 100
+            "min": 1,
+            "max": 12
         }
 
         self.schema: dict = {
