@@ -3,7 +3,6 @@ class DataValidator:
     def __init__(self, data: dict):
 
         self.data = data
-        self._data_validated: bool = False
 
         self.string_constraints: dict = {
             "type": str,
@@ -51,9 +50,4 @@ class DataValidator:
                     f"numeric values should be from {m} to {n}"
                 )
 
-        self._data_validated = True
         return True
-
-    @property
-    def cleanedData(self):
-        return self.data if self._data_validated else None
